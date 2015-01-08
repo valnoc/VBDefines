@@ -26,7 +26,7 @@
 #define VBDefines_h
 
 #ifdef DEBUG
-#define VBLog(str, ...) NSLog(@"%@%d> %@", [NSString stringWithUTF8String:__func__], __LINE__, [NSString stringWithFormat:(str), ##__VA_ARGS__])
+#define VBLog(str, ...) NSLog(@"[%@ %@]%d> %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__, [NSString stringWithFormat:(str), ##__VA_ARGS__])
 #else
 #define VBLog(str, ...)
 #endif
