@@ -27,10 +27,19 @@
 
 #ifdef DEBUG
 #define VBLog(str, ...) { \
-NSString* func = [NSString stringWithUTF8String:__func__]; \
-NSString* cmdOwner = [[[func componentsSeparatedByString:@" "] firstObject] substringFromIndex:2]; \
-NSString* cmdSelf = NSStringFromClass([self class]); \
-NSLog(@"[%@%@ %@]%d> %@", [cmdSelf isEqualToString:cmdOwner] ? @"" : [NSString stringWithFormat:@"%@:", cmdSelf], cmdOwner, NSStringFromSelector(_cmd), __LINE__, [NSString stringWithFormat:(str), ##__VA_ARGS__]); \
+    NSString* func = [NSString stringWithUTF8String:__func__]; \
+    NSString* cmdOwner = [func stringByReplacingOccurrencesOfString:@".*\\[(.*)\\s.*" \
+                                                         withString:@"$1" \
+                                                            options:NSRegularExpressionSearch \
+                                                              range:NSMakeRange(0, func.length)]; \
+    NSString* cmdSelf = NSStringFromClass([self class]); \
+    NSLog(@"[%@%@ %@]%d> %@", \
+            [cmdSelf isEqualToString:cmdOwner] ? @"" : [NSString stringWithFormat:@"%@:", cmdSelf], \
+            cmdOwner, \
+            NSStringFromSelector(_cmd), \
+            __LINE__, \
+            [NSString stringWithFormat:(str), \
+            ##__VA_ARGS__]); \
 }
 #else
 #define VBLog(str, ...)
