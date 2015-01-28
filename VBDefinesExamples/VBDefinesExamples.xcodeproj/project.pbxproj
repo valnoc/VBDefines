@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1D64BF1A79905D00EEEF79 /* VBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDefines.h; sourceTree = "<group>"; };
 		5BF5E0361A7056C6002BB3B9 /* VBDefinesExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBDefinesExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF5E03A1A7056C6002BB3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF5E03B1A7056C6002BB3B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		5BF5E04F1A7056C6002BB3B9 /* VBDefinesExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBDefinesExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF5E0541A7056C6002BB3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF5E0551A7056C6002BB3B9 /* VBDefinesExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBDefinesExamplesTests.m; sourceTree = "<group>"; };
-		5BF5E0601A705786002BB3B9 /* VBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDefines.h; sourceTree = "<group>"; };
 		5BF5E0641A70588A002BB3B9 /* User1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User1.h; sourceTree = "<group>"; };
 		5BF5E0651A70588A002BB3B9 /* User1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User1.m; sourceTree = "<group>"; };
 		5BF5E0671A705893002BB3B9 /* User2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User2.h; sourceTree = "<group>"; };
@@ -68,10 +68,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1D64BE1A79905D00EEEF79 /* VBDefines */ = {
+			isa = PBXGroup;
+			children = (
+				5B1D64BF1A79905D00EEEF79 /* VBDefines.h */,
+			);
+			name = VBDefines;
+			path = ../VBDefines;
+			sourceTree = "<group>";
+		};
 		5BF5E02D1A7056C6002BB3B9 = {
 			isa = PBXGroup;
 			children = (
-				5BF5E05F1A705786002BB3B9 /* VBDefines */,
+				5B1D64BE1A79905D00EEEF79 /* VBDefines */,
 				5BF5E0381A7056C6002BB3B9 /* VBDefinesExamples */,
 				5BF5E0521A7056C6002BB3B9 /* VBDefinesExamplesTests */,
 				5BF5E0371A7056C6002BB3B9 /* Products */,
@@ -131,14 +140,6 @@
 				5BF5E0541A7056C6002BB3B9 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5BF5E05F1A705786002BB3B9 /* VBDefines */ = {
-			isa = PBXGroup;
-			children = (
-				5BF5E0601A705786002BB3B9 /* VBDefines.h */,
-			);
-			path = VBDefines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
