@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "VBDefines.h"
+#import "User2.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +21,9 @@
     // Override point for customization after application launch.
     
     VBLog(@"Hello, world!");
+    
+    User2* u2 = [User2 new];
+    [u2 foo2];
     
     return YES;
 }

@@ -14,6 +14,8 @@
 		5BF5E0471A7056C6002BB3B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF5E0461A7056C6002BB3B9 /* Images.xcassets */; };
 		5BF5E04A1A7056C6002BB3B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF5E0481A7056C6002BB3B9 /* LaunchScreen.xib */; };
 		5BF5E0561A7056C6002BB3B9 /* VBDefinesExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5E0551A7056C6002BB3B9 /* VBDefinesExamplesTests.m */; };
+		5BF5E0661A70588A002BB3B9 /* User1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5E0651A70588A002BB3B9 /* User1.m */; };
+		5BF5E0691A705893002BB3B9 /* User2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5E0681A705893002BB3B9 /* User2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,11 @@
 		5BF5E0541A7056C6002BB3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF5E0551A7056C6002BB3B9 /* VBDefinesExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBDefinesExamplesTests.m; sourceTree = "<group>"; };
 		5BF5E0601A705786002BB3B9 /* VBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDefines.h; sourceTree = "<group>"; };
+		5BF5E0641A70588A002BB3B9 /* User1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User1.h; sourceTree = "<group>"; };
+		5BF5E0651A70588A002BB3B9 /* User1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User1.m; sourceTree = "<group>"; };
+		5BF5E0671A705893002BB3B9 /* User2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User2.h; sourceTree = "<group>"; };
+		5BF5E0681A705893002BB3B9 /* User2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User2.m; sourceTree = "<group>"; };
+		5BF5E06A1A7058E6002BB3B9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,10 @@
 			children = (
 				5BF5E03D1A7056C6002BB3B9 /* AppDelegate.h */,
 				5BF5E03E1A7056C6002BB3B9 /* AppDelegate.m */,
+				5BF5E0641A70588A002BB3B9 /* User1.h */,
+				5BF5E0651A70588A002BB3B9 /* User1.m */,
+				5BF5E0671A705893002BB3B9 /* User2.h */,
+				5BF5E0681A705893002BB3B9 /* User2.m */,
 				5BF5E0401A7056C6002BB3B9 /* ViewController.h */,
 				5BF5E0411A7056C6002BB3B9 /* ViewController.m */,
 				5BF5E0431A7056C6002BB3B9 /* Main.storyboard */,
@@ -100,6 +111,7 @@
 			children = (
 				5BF5E03A1A7056C6002BB3B9 /* Info.plist */,
 				5BF5E03B1A7056C6002BB3B9 /* main.m */,
+				5BF5E06A1A7058E6002BB3B9 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF5E0421A7056C6002BB3B9 /* ViewController.m in Sources */,
+				5BF5E0691A705893002BB3B9 /* User2.m in Sources */,
 				5BF5E03F1A7056C6002BB3B9 /* AppDelegate.m in Sources */,
+				5BF5E0661A70588A002BB3B9 /* User1.m in Sources */,
 				5BF5E03C1A7056C6002BB3B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +369,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/valnoc/Documents/projects/github/VBDefines/VBDefinesExamples/VBDefinesExamples/PrefixHeader.pch;
 				INFOPLIST_FILE = VBDefinesExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,6 +381,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/valnoc/Documents/projects/github/VBDefines/VBDefinesExamples/VBDefinesExamples/PrefixHeader.pch;
 				INFOPLIST_FILE = VBDefinesExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,6 +442,7 @@
 				5BF5E05B1A7056C6002BB3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BF5E05C1A7056C6002BB3B9 /* Build configuration list for PBXNativeTarget "VBDefinesExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +451,7 @@
 				5BF5E05E1A7056C6002BB3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
