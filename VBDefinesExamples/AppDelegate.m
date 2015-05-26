@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "VBDefines.h"
 #import "User2.h"
 
 @interface AppDelegate ()

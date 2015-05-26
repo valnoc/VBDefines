@@ -8,6 +8,8 @@
 
 #import "User2.h"
 
+#import "VBDefines.h"
+
 @implementation User2
 
 - (void) foo2 {
