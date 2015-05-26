@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B1D64BF1A79905D00EEEF79 /* VBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDefines.h; sourceTree = "<group>"; };
+		5B0E4A851B1514B000DF05CC /* VBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDefines.h; sourceTree = "<group>"; };
 		5BF5E0361A7056C6002BB3B9 /* VBDefinesExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBDefinesExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF5E03A1A7056C6002BB3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF5E03B1A7056C6002BB3B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,19 +68,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B1D64BE1A79905D00EEEF79 /* VBDefines */ = {
+		5B0E4A841B1514B000DF05CC /* VBDefines */ = {
 			isa = PBXGroup;
 			children = (
-				5B1D64BF1A79905D00EEEF79 /* VBDefines.h */,
+				5B0E4A851B1514B000DF05CC /* VBDefines.h */,
 			);
-			name = VBDefines;
-			path = ../VBDefines;
+			path = VBDefines;
 			sourceTree = "<group>";
 		};
 		5BF5E02D1A7056C6002BB3B9 = {
 			isa = PBXGroup;
 			children = (
-				5B1D64BE1A79905D00EEEF79 /* VBDefines */,
+				5B0E4A841B1514B000DF05CC /* VBDefines */,
 				5BF5E0381A7056C6002BB3B9 /* VBDefinesExamples */,
 				5BF5E0521A7056C6002BB3B9 /* VBDefinesExamplesTests */,
 				5BF5E0371A7056C6002BB3B9 /* Products */,
