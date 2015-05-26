@@ -26,6 +26,9 @@
 #define VBDefines_h
 
 #ifdef DEBUG
+/**
+ *  VBLog is a NSLog redefine. It adds some additional info (caller class, line) to log message. Stops logging in non-DEBUG builds.
+ */
 #define VBLog(str, ...) { \
     NSString* func = [NSString stringWithUTF8String:__func__]; \
     NSString* cmdOwner = [func stringByReplacingOccurrencesOfString:@".*\\[(.*)\\s.*" \
